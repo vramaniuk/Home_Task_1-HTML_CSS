@@ -10,15 +10,32 @@
 
 .main {
     height: 12000px;
-    background: url("../images/fon3.gif") no-repeat center top fixed;
+    background: url("../images/fon3_green.gif") no-repeat center top fixed;
 
 }
+#div1 {
+    width: 1125px;
+    /*margin: 30px auto;*/
+    height: 12px;
+    font: 30px Arial, Helvetica, sans-serif;
+    /*border: 2px solid #ff0000;*/
+    line-height: 1;
+    /*padding: 20px 0 0 0;*/
+    text-align: center;
+    background-image: url("../images/fon2.gif");
+    color: #FFF;
+}
+/*#div1{*/
+    /*margin-top: auto;*/
+    /*height: 100px;*/
+    /*background-image: url("../images/fon2.gif");*/
+/*}*/
 
-.expandUp {
+.slideDown {
     margin: 0 auto ;
     position: fixed;
 
-    animation-name: expandUp;
+    animation-name: slideDown;
 
     animation-duration: 1s;
 
@@ -27,17 +44,23 @@
     visibility: visible !important;
 }
 
-@keyframes expandUp {
+@keyframes slideDown {
     0% {
-        transform: translateY(100%) scale(0.6) scaleY(0.5);
+        transform: translateY(-100%);
     }
-    60% {
-        transform: translateY(-7%) scaleY(1.12);
+    50%{
+        transform: translateY(8%);
     }
-    75% {
-        transform: translateY(3%);
+    65%{
+        transform: translateY(-4%);
+    }
+    80%{
+        transform: translateY(4%);
+    }
+    95%{
+        transform: translateY(-2%);
     }
     100% {
-        transform: translateY(0%) scale(1) scaleY(1);
+        transform: translateY(0%);
     }
 }
