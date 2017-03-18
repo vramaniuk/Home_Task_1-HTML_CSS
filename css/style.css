@@ -2,18 +2,22 @@
     margin: 0;
     padding: 0
 }
-#logo{
-    width: auto;
-   position: fixed;
+
+ #img1  {
+    margin: 0 30px ;
 
 }
+
 .main {
-    /*width: 980px;*/
     height: 12000px;
-    background-image: url("../images/house.png");
+    background: url("../images/fon3.gif") no-repeat center top fixed;
+
 }
 
 .expandUp {
+    margin: 0 auto ;
+    position: fixed;
+
     animation-name: expandUp;
 
     animation-duration: 1s;
