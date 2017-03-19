@@ -3,41 +3,47 @@
     padding: 0
 }
 
- #img1  {
-    margin: 0 30px ;
-
-}
-
 .main {
     height: 12000px;
     background: url("../images/fon3_green.gif") no-repeat center top fixed;
 
 }
-#div1 {
-    width: 1125px;
-    /*margin: 30px auto;*/
-    height: 12px;
-    font: 30px Arial, Helvetica, sans-serif;
-    /*border: 2px solid #ff0000;*/
-    line-height: 1;
-    /*padding: 20px 0 0 0;*/
-    text-align: center;
-    background-image: url("../images/fon2.gif");
-    color: #FFF;
+
+#head {
+
+    width: 1199px;
+    height: 152px;
+    background: url("../images/head of calendar.gif") no-repeat center top fixed;
+    margin: 0 auto;
 }
-/*#div1{*/
-    /*margin-top: auto;*/
-    /*height: 100px;*/
-    /*background-image: url("../images/fon2.gif");*/
-/*}*/
+
+@media screen and (max-width: 640px) {
+    #head {
+        background: url("../images/head of calendar mob.gif") no-repeat center top fixed;
+        margin: 0 auto;
+    }
+}
+
+#bod {
+
+    width: 1199px;
+    height: 722px;
+    background: url("../images/body of calendar.gif") no-repeat center fixed;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 640px) {
+    #bod {
+        background: url("../images/body of calendar mob.gif") no-repeat center fixed;
+        margin: 0 auto;
+    }
+}
 
 .slideDown {
-    margin: 0 auto ;
-    position: fixed;
 
     animation-name: slideDown;
 
-    animation-duration: 1s;
+    animation-duration: 1.5s;
 
     animation-timing-function: ease;
 
@@ -48,16 +54,16 @@
     0% {
         transform: translateY(-100%);
     }
-    50%{
+    50% {
         transform: translateY(8%);
     }
-    65%{
+    65% {
         transform: translateY(-4%);
     }
-    80%{
+    80% {
         transform: translateY(4%);
     }
-    95%{
+    95% {
         transform: translateY(-2%);
     }
     100% {
