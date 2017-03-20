@@ -13,28 +13,32 @@
 
     width: 1199px;
     height: 152px;
-    background: url("../images/head of calendar.gif") no-repeat center top fixed;
+    background: url("../images/head of calendar.gif") no-repeat center top ;
     margin: 0 auto;
+
 }
 
 @media screen and (max-width: 640px) {
     #head {
-        background: url("../images/head of calendar mob.gif") no-repeat center top fixed;
+        width: 505px;
+        height: 79px;
+        background: url("../images/head of calendar mob.gif") no-repeat center top ;
         margin: 0 auto;
     }
 }
 
 #bod {
-
     width: 1199px;
-    height: 722px;
-    background: url("../images/body of calendar.gif") no-repeat center fixed;
+    height: 700px;
+    background: url("../images/body of calendar.gif") no-repeat top center;
     margin: 0 auto;
 }
 
 @media screen and (max-width: 640px) {
     #bod {
-        background: url("../images/body of calendar mob.gif") no-repeat center fixed;
+        width: 505px;
+        height: 789px;
+        background: url("../images/body of calendar mob.gif") no-repeat center ;
         margin: 0 auto;
     }
 }
